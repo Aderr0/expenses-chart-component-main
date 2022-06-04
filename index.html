@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.scss" />
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="top-card">
+    <div class="text">
+      <span class="title">My balance</span>
+      <span class="value">$921.48</span>
+    </div>
+
+    <img src="images/logo.svg" />
+  </div>
+
+  <div class="main-card">
+    <span class="title">Spending - Last 7 days</span>
+    
+    <div class="graph">
+      <div class="histo" id="mon">
+        <span class="value"></span>
+        <div class="mon-rect" id="mon-histo"></div>
+        <span class="day">mon</span>
+      </div>
+      <div class="histo" id="tue">
+        <span class="value"></span>
+        <div class="tue-rect" id="tue-histo"></div>
+        <span class="day">tue</span>
+      </div>
+      <div class="histo" id="wed">
+        <span class="value"></span>
+        <div class="wed-rect" id="wed-histo"></div>
+        <span class="day">wed</span>
+      </div>
+      <div class="histo" id="thu">
+        <span class="value"></span>
+        <div class="thu-rect" id="thu-histo"></div>
+        <span class="day">thu</span>
+      </div>
+      <div class="histo" id="fri">
+        <span class="value"></span>
+        <div class="fri-rect" id="fri-histo"></div>
+        <span class="day">fri</span>
+      </div>
+      <div class="histo" id="sat">
+        <span class="value"></span>
+        <div class="sat-rect" id="sat-histo"></div>
+        <span class="day">sat</span>
+      </div>
+      <div class="histo" id="sun">
+        <span class="value"></span>
+        <div class="sun-rect" id="sun-histo"></div>
+        <span class="day">sun</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="total">
+        <span class="description">Total this month</span>
+        <span class="value">$478.33</span>
+      </div>
+
+      <div class="pourcentage">
+        <span class="value">+2.4%</span>
+        <span class="description">from last month</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aderr0</a>.
+  </div>
+</body>
+
+<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>

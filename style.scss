@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    font-weight: 400;
+    font-family: 'DS Sans', sans-serif
+}
+
+.top-card, .main-card {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.top-card {
+    background-color: hsl(10, 79%, 65%);
+    margin-top: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.top-card .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-card .title {
+    font-size: small;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top-card .value {
+    font-weight: 700;
+    font-size: larger;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top-card img {
+    margin-left: auto;
+    display: block;
+}
+
+.main-card {
+    background-color: hsl(33, 100%, 98%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main-card .title {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.main-card .graph {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.main-card .graph .histo {
+    width: 17%;
+    text-align: center;
+    height: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card .graph .histo div {
+    width: 70%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 4px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-card .graph .histo div:hover {
+    background-color: hsla(10, 79%, 65%, 0.548)
+}
+
+.main-card .graph .histo .value {
+    margin-top: auto;
+    color: white;
+    font-weight: 700;
+    font-size: small;
+    padding: 5px 2px 5px 2px;
+    margin-bottom: 5px;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 4px;
+    visibility: hidden;
+}
+
+.main-card .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-card .footer .total, .main-card .footer .pourcentage {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card .footer .total .description {
+    font-size: x-small;
+}
+
+.main-card .footer .total .value {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.main-card .footer .pourcentage {
+    margin-top: auto;
+}
+
+.main-card .footer .pourcentage .description {
+    font-size: x-small;
+}
+
+.main-card .footer .pourcentage .value {
+    font-weight: 700;
+    margin-left: auto;
+}
+
+
+
+@media all and (min-width: 1280px) {
+    .top-card, .main-card {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 1280px) and (min-width: 1024px) {
+    .top-card, .main-card {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 980px) {
+    .top-card, .main-card {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 980px) {
+    .top-card, .main-card {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .top-card, .main-card {
+        padding: 20px;
+    }
+
+    .main-card .graph .histo {
+        width: 15%;
+    }
+    .main-card .graph .histo .day {
+        font-size: small;
+    } 
+    .main-card .graph .histo .value {
+        font-size: x-small;
+    }
+}
